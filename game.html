@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dots and Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dots and Boxes</h1>
+    <div class="score">
+        <h4 id="player1Score">Player 1: 0</h4>
+        <h4 id="player2Score">Player 2: 0</h4>
+        <h4 id="player3Score">Player 3: 0</h4>
+    </div>
+    <div class="popupcontainer" id="popupcontainer">
+        <div class="popup" id="popup">
+            <h3 id="winner">Winner:</h3>
+            <a href="game.html"><button onclick="closePopup()">Play Again?</button></a>
+            <a href="index.html"><button onclick="closePopup()">Quit</button></a>
+        </div>
+    </div>
+    <div id="game">
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
